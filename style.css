@@ -1,8 +1,18 @@
-*{
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'poppins' , sans-serif;
     background-color: #1E1B4B;
     margin: 0;
     padding: 0;
+}
+
+*{
+    color: white;
+    /* background-color: #1E1B4B; */
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
 }
 .text{
     margin-left: 8%;
@@ -42,35 +52,220 @@ color: white;
     flex-direction: row;
     justify-content: space-around;
     margin-right: 60%;
-    
 }  
 .main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 .main1{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
+}
+.trust{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.trust p{
+    position: absolute;
+    left: 200px;
+    top: 120px;
+}
 
+.shapy-image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bulb{
+    width: 80%;
+    height: 30vh; 
+}
+.bulb1{
+    width: 80%;
+    height: 30vh; 
+}
+.bulb2{
+    width: 80%;
+    height: 30vh; 
+}
+.bulb3{
+    width: 80%;
+    height: 30vh; 
+}
+.feat{
+    position: absolute;
+    width: 15%;
+    bottom:20% ;
+    font-family: 'poppins' , sans-serif;
+}
+.square-cylinder{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    width: 100%;
+    height: 50vh;
+    background-color:transparent;
+    position: absolute;
+}
+#square1{
+    display: inline-block;
+    background-color:#1e1b4bc4;
+    justify-content: flex-start;
+    text-align: center;
+    width:18%;
+    height: 50vh;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.466);
+   
+}
+#square2{
+    display:inline-block;
+    background-color:#1e1b4bc4;
+    text-align: center;
+    width:18%;
+    height: 50vh;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.466);
+}
+#square3{
+    display:inline-block;
+    background-color:#1e1b4bc4;
+    text-align: center;
+    width:18%;
+    height: 50vh;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.466);
+}
+#square4{
+    display:inline-block;
+    background-color:#1e1b4bc4;
+    text-align: center;
+    width:18%;
+    height: 50vh;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.466);
+}
+.main1{
+    margin-top: 10%;
 }
 .text1{
     margin-left: 10%;
 }
-/* .container{
-    background-image: url(Group\ 7.png);
-    background-repeat: no-repeat;
+.container{
     width: 100%;
-    height: auto; */
-    /* position: relative;
-    margin: 10% auto ; */
-/* }  
- /* .trust{
-    width: inherit;
+    background-color:#6BFCFB;
+    color: #1E1B4B;
+    margin:auto  ;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap ;
+}
+ul{
+    list-style: none;
+}
+.footer{
+   background-color:black  ;
+}
+.footercol{
+    width: 25%;
+    padding: 0 15px;
+}
+.footercol h4{
+    font-size: 18px;
+    color: #1E1B4B;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight:500 ;
+    position: relative;
+}
+.footercol h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: purple;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footercol ul li:not(:last-child){
+    margin-bottom:10px ;
+}
+.footercol ul li a{
+    font-size: 16px;
+    text-transform:capitalize ;
+    text-align:left;
+    color: #1E1B4B;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+} 
+.footercol ul li a:hover{
+    color:#1E1B4B;
+    padding-left: 8px;
+}
+.footerlogo h4{
+    font-size: 18px;
+    color: #1E1B4B;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight:500 ;
+    position: relative;
+}   
+.footerlogo .social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color:#1E1B4B;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footerlogo .social a:hover{
+    color:#1E1B4B;
+    background-color: white; 
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+}
+@media(max-width: 767px){
+    .footercol{
+        width: 50%;
+        margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+    .footercol{
+        width: 100%;
+        margin-bottom: 30px;
+}
+}
     position: absolute;
     color: white;
     right: 10px;
