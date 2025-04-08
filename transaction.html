@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+    <section class="transaction-section">
+        <div class="transaction-header">
+          <h2>Recent Transactions</h2>
+          <button class="download-btn">Download CSV</button>
+        </div>
+      
+        <div class="transaction-filters">
+          <input type="text" placeholder="Search by name or category..." />
+          <select>
+            <option>All</option>
+            <option>Income</option>
+            <option>Expense</option>
+          </select>
+        </div>
+      
+        <div class="transaction-table">
+          <div class="transaction-row header">
+            <span>Date</span>
+            <span>Description</span>
+            <span>Type</span>
+            <span>Amount</span>
+          </div>
+      
+          <div class="transaction-row">
+            <span>Apr 7, 2025</span>
+            <span>Transfer to Savings</span>
+            <span class="type expense">Expense</span>
+            <span class="amount">-₦5,000</span>
+          </div>
+      
+          <div class="transaction-row">
+            <span>Apr 5, 2025</span>
+            <span>Salary</span>
+            <span class="type income">Income</span>
+            <span class="amount">₦150,000</span>
+          </div>
+      
+          <div class="transaction-row">
+            <span>Apr 2, 2025</span>
+            <span>Grocery Shopping</span>
+            <span class="type expense">Expense</span>
+            <span class="amount">-₦15,300</span>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>

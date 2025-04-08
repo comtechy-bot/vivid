@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Plans</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      /*background-color: #9333EA;*/
+      background-image: url( Sign\ up.png);
+      color: #000;
+    }
+
+    .pricing-section {
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .pricing-section h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .pricing-section p {
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+
+    .plans {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .plan {
+      background-color: white;
+      color: black;
+      border-radius: 16px;
+      padding: 30px 20px;
+      width: 280px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      position: relative;
+    }
+
+    .plan h2 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .plan .save-badge {
+      background-color: #6BFCFB;
+      color: black;
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 10px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    .features li::before {
+      content: "✔";
+      color: #9333EA;
+      margin-right: 8px;
+    }
+
+    .plan button {
+      background-color: #000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .cms-plan {
+      background-color: #9333EA;
+      color: white;
+      border-radius: 16px;
+      margin-top: 40px;
+      padding: 30px 20px;
+      max-width: 900px;
+      margin-inline: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .cms-plan h2 {
+      /*max-width: 500px;*/
+      margin-right: 10%;
+    }
+
+    .cms-plan .tools {
+      display: flex;
+      gap: 15px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    .cms-plan .tools span::before {
+      content: "✔";
+      color: #6BFCFB;
+      margin-right: 6px;
+    }
+
+    .cms-plan .price {
+      font-size: 2rem;
+    }
+
+    .cms-plan button {
+      margin-top: 10px;
+      background-color: #fff;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="pricing-section">
+    <h1>Plans</h1>
+    <p>Choose a plan that’s right for you. Pause or cancel anytime.</p>
+
+    <div class="plans">
+      <div class="plan">
+        <h2>Monthly</h2>
+        <p>No minimum commitment<br>Pause or cancel anytime</p>
+        <div class="price">$100<span>/month</span></div>
+        <ul class="features">
+          <li>Unlimited requests</li>
+          <li>Unlimited brands</li>
+          <li>Unlimited revisions</li>
+          <li>Free stock assets</li>
+          <li>Native source files</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+
+      <div class="plan">
+        <h2>Quarterly</h2>
+        <div class="save-badge">Save $1,500</div>
+        <p>No minimum commitment<br>Pause or cancel anytime</p>
+        <div class="price">$300<span>/month</span></div>
+        <ul class="features">
+          <li>Unlimited requests</li>
+          <li>Transaction tracking</li>
+          <li>Unlimited revisions</li>
+          <li>Free stock assets</li>
+          <li>Native source files</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+
+      <div class="plan">
+        <h2>Yearly</h2>
+        <div class="save-badge">Save $12,000</div>
+        <p>No minimum commitment<br>Pause or cancel anytime</p>
+        <div class="price">$1200<span>/month</span></div>
+        <ul class="features">
+          <li>Unlimited requests</li>
+          <li>Unlimited brands</li>
+          <li>Unlimited revisions</li>
+          <li>Free stock assets</li>
+          <li>Native source files</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+    </div>
+
+    <div class="cms-plan">
+      <div class="text">
+        <h2>Pure CMS</h2>
+        <p>No-code development. Without design.</p>
+        <div class="tools">
+          <span>Webflow</span>
+          <span>Readymag</span>
+          <span>Tilda</span>
+        </div>
+      </div>
+      <div>
+        <div class="price">$2,000<span>/month</span></div>
+        <button>Get Started</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
